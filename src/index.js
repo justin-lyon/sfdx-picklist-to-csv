@@ -3,10 +3,6 @@ const path = require('path')
 const XmlReader = require('xml-reader')
 const ExportToCsv = require('export-to-csv').ExportToCsv
 
-const sources = [
-  'MyField__c.field-meta.xml'
-]
-
 const readValues = ({ name, xml }) => {
   return new Promise((resolve, reject) => {
     const field = { name, values: [] }
@@ -31,6 +27,9 @@ const readValues = ({ name, xml }) => {
     reader.parse(xml)
   })
 }
+
+const fieldsFolder = path.join(__dirname, 'fields')
+const sources = fs.readdirSync(fieldsFolder)
 
 const fields = sources.map(s => ({
   name: s.replace('.field-meta.xml', ''),
