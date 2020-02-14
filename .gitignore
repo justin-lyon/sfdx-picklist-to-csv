@@ -1,0 +1,5 @@
+node_modules
+src/output
+src/fields
+!src/output/*.md
+!src/fields/*.md
