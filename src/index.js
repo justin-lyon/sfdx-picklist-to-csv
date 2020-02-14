@@ -3,15 +3,8 @@ const path = require('path')
 const XmlReader = require('xml-reader')
 const ExportToCsv = require('export-to-csv').ExportToCsv
 
-// const sources = [
-//   'MyField__c.field-meta.xml'
-// ]
-
 const sources = [
-  'Category__c.field-meta.xml',
-  'Outbound_Type__c.field-meta.xml',
-  'Response__c.field-meta.xml',
-  'Sub_category__c.field-meta.xml'
+  'MyField__c.field-meta.xml'
 ]
 
 const readValues = ({ name, xml }) => {
