@@ -3,3 +3,6 @@ src/output/*
 src/fields/*
 !src/output/README.md
 !src/fields/README.md
+
+.sfdx/
+.vscode/
