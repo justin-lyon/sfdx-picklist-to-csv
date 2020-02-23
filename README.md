@@ -1,4 +1,4 @@
-# picklist-dependency-to-csv
+# sfdx-picklist-to-csv
 
 Requires Node JS
 
